@@ -80,6 +80,7 @@ button {
     cursor: pointer;
 }
 
+/* esses dois button serve para dar a sensação de click */
 button {
     transition: transform 0.1s;
 }
@@ -87,7 +88,6 @@ button {
 button:active {
     transform: scale(1.3);
 }
-
 footer {
     background: linear-gradient(160deg, #194756, #54736e);
     padding: 1%;
