@@ -80,7 +80,11 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+button {
+    transition: transform 0.1s;
+}
+
+button:active {
     transform: scale(1.3);
 }
 
