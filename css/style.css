@@ -80,10 +80,14 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    transform: scale(1.3);
+/* esses dois button serve para dar a sensação de click */
+button {
+    transition: transform 0.1s;
 }
 
+button:active {
+    transform: scale(1.3);
+}
 footer {
     background: linear-gradient(160deg, #194756, #54736e);
     padding: 1%;
