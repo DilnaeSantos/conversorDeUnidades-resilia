@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsividade1047.css">
+    <link rel="stylesheet" href="./css/responsividade375.css">
+    <link rel="stylesheet" href="./css/input.css">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <title>Calculadora de unidades</title>
+</head>
+<body>
+    <header>
+        <h1>Calculadora de unidades </h1>
+    </header>
+    <main class="main-container">
+        <!-- essa section e para definir um bom estilo e centralizar todo o conteudo -->
+        <section class="section-container-padrao">
+            <form class="form-container-padrao">
+                <p id="mensagemDeErro">Selecione e digite nos campos</p>
+                <!-- as div e para separar os conteudos para melhor estilização -->
+                <div class="valor-digitado"> 
+                    <label for="valorDigitado">Digite o valor</label> 
+                    <input type="number" name="valorDigitado" step="0.01" id="valorDigitado" > 
+                </div>
+                <div class="categorias">
+                    <p>categoria</p>
+                    <select name="categorias" id="categorias" class="oi">
+                        <option value="selecione">Selecione</option>
+                        <option value="comprimento">Comprimento</option>
+                        <option value="peso">Peso</option>
+                        <option value="temperatura">Temperatura</option>
+                    </select>
+                </div>
+                <div class="unidades">
+                    <p>medida de origem</p>
+                    <select name="comprimentos" id="comprimentosOrigem">
+                        <option value="selecione">selecione</option>
+                        <option value="metros">metros</option>
+                        <option value="centimetros">centímetros</option>
+                        <option value="polegadas">Polegadas</option>
+                    </select>
+                    <select name="pesos" id="pesosOrigem">
+                        <option value="selecione">selecione</option>
+                        <option value="quilogramas">Quilogramas</option>
+                        <option value="gramas">Gramas</option>
+                        <option value="libras">Libras</option>
+                    </select>
+                    <select name="temperaturas" id="temperaturasOrigem">
+                        <option value="selecione">selecione</option>
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>                 
+                </div>
+                <div class="unidades">
+                    <p>medida de destino</p>
+                    <select name="comprimentos" id="comprimentosDestino">
+                        <option value="selecione">selecione</option>
+                        <option value="metros">metros</option>
+                        <option value="centimetros">centímetros</option>
+                        <option value="polegadas">Polegadas</option>
+                    </select>
+                    <select name="pesos" id="pesosDestino">
+                        <option value="selecione">selecione</option>
+                        <option value="quilogramas">Quilogramas</option>
+                        <option value="gramas">Gramas</option>
+                        <option value="libras">Libras</option>
+                    </select>
+                    <select name="temperaturas" id="temperaturasDestino">
+                        <option value="selecione">selecione</option>
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+                <div class="unidades">
+                    <label for="resuldado">Resuldado</label> 
+                    <input type="number" name="resuldado" step="0.01" id="resultado" readonly> 
+                </div>
+                <button id="botaoParaConverter">Converter</button>           
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Dilnae</p>
+    </footer>
+    <script src="./JavaScript/script.js"></script>
+</body>
+</html>

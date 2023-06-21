@@ -1,0 +1,14 @@
+@media (max-width: 376px) {
+    body {
+        font-size: 80%;
+    }
+    .main-container {
+        height: 81vh;
+    }
+
+    .section-container-padrao {
+        width: 94%;
+        height: 77%;
+    }
+}
+
