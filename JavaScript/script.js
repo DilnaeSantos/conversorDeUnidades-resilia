@@ -79,7 +79,7 @@ function comprimento(event) {
     comprimentosOrigemValor = document.querySelector('#comprimentosOrigem').value;
     comprimentosDestinoValor = document.querySelector('#comprimentosDestino').value;
       
-    if (valorDigitado == 0 || isNaN(valorDigitado) || categoriasValor,comprimentosOrigemValor,comprimentosDestinoValor === 'selecione' ) {
+    if (valorDigitado == 0 || isNaN(valorDigitado) || categoriasValor === 'selecione' || comprimentosOrigemValor === 'selecione' || comprimentosDestinoValor === 'selecione' ) {
         msgDeErro.innerText = 'preencha ou selecione os campos'
         msgDeErro.style.backgroundColor = '#e70000'
         resultado.value = ''
@@ -144,7 +144,7 @@ function peso(event) {
     pesosOrigemValor = document.querySelector('#pesosOrigem').value
     pesosDestinoValor = document.querySelector('#pesosDestino').value
     
-    if (valorDigitado == 0 || isNaN(valorDigitado) || categoriasValor,pesosDestinoValor,pesosOrigemValor === 'selecionne') {
+    if (valorDigitado == 0 || isNaN(valorDigitado) || categoriasValor === 'selecione' || pesosDestinoValor === 'selecione' || pesosOrigemValor === 'selecionne') {
         msgDeErro.innerText = 'preencha ou selecione os campos'
         msgDeErro.style.backgroundColor = '#e70000'
         resultado.value = ''
@@ -208,7 +208,7 @@ function temperatura(event) {
     temperaturasOrigemValor = document.querySelector('#temperaturasOrigem').value
     temperaturasDestinoValor = document.querySelector('#temperaturasDestino').value
 
-    if (valorDigitado == 0 || isNaN(valorDigitado) || categoriasValor,temperaturasOrigemValor,temperaturasDestinoValor === 'selecione') {
+    if (valorDigitado == 0 || isNaN(valorDigitado) || categoriasValor === 'selecione' || temperaturasOrigemValor === 'selecione' || temperaturasDestinoValor === 'selecione') {
         msgDeErro.innerText = 'preencha ou selecione os campos'
         msgDeErro.style.backgroundColor = '#e70000'
         resultado.value = ''
