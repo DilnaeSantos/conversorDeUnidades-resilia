@@ -45,20 +45,20 @@ document.querySelector('#categorias').addEventListener('change', opcoesCategoria
 
 
 // esse campo e para o usuario não consequi digita no campo resultado 
-var resultado = document.getElementById('resultado');
-resultado.setAttribute('readonly', 'true');
+var resultado = document.getElementById('resultado')
+resultado.setAttribute('readonly', 'true')
 
 
-var msgDeErro = document.getElementById('mensagemDeErro');
-var resultado = document.querySelector('#resultado');
-var valorDigitado;
-var categoriasValor;
-var comprimentosOrigemValor;
-var comprimentosDestinoValor;
+var msgDeErro = document.getElementById('mensagemDeErro')
+var resultado = document.querySelector('#resultado')
+var valorDigitado
+var categoriasValor
+var comprimentosOrigemValor
+var comprimentosDestinoValor
 var pesosOrigemValor
 var pesosDestinoValor
-var temperaturasOrigemValor;
-var temperaturasDestinoValor;
+var temperaturasOrigemValor
+var temperaturasDestinoValor
 
 function exibirMsgDeErro(event) {
     event.preventDefault()
@@ -74,10 +74,10 @@ function exibirMsgDeErro(event) {
 function comprimento(event) {
     event.preventDefault()
    
-    valorDigitado = parseFloat(document.querySelector('#valorDigitado').value);
+    valorDigitado = parseFloat(document.querySelector('#valorDigitado').value)
     categoriasValor = document.querySelector('#categorias').value;
-    comprimentosOrigemValor = document.querySelector('#comprimentosOrigem').value;
-    comprimentosDestinoValor = document.querySelector('#comprimentosDestino').value;
+    comprimentosOrigemValor = document.querySelector('#comprimentosOrigem').value
+    comprimentosDestinoValor = document.querySelector('#comprimentosDestino').value
       
     if (valorDigitado == 0 || isNaN(valorDigitado) || categoriasValor === 'selecione' || comprimentosOrigemValor === 'selecione' || comprimentosDestinoValor === 'selecione' ) {
         msgDeErro.innerText = 'preencha ou selecione os campos'
@@ -139,8 +139,8 @@ function comprimento(event) {
 function peso(event) {
     event.preventDefault()
 
-    valorDigitado = parseFloat(document.querySelector('#valorDigitado').value);
-    categoriasValor = document.querySelector('#categorias').value;
+    valorDigitado = parseFloat(document.querySelector('#valorDigitado').value)
+    categoriasValor = document.querySelector('#categorias').value
     pesosOrigemValor = document.querySelector('#pesosOrigem').value
     pesosDestinoValor = document.querySelector('#pesosDestino').value
     
@@ -203,8 +203,8 @@ function peso(event) {
 function temperatura(event) {
     event.preventDefault()
 
-    valorDigitado = parseFloat(document.querySelector('#valorDigitado').value);
-    categoriasValor = document.querySelector('#categorias').value; 
+    valorDigitado = parseFloat(document.querySelector('#valorDigitado').value)
+    categoriasValor = document.querySelector('#categorias').value
     temperaturasOrigemValor = document.querySelector('#temperaturasOrigem').value
     temperaturasDestinoValor = document.querySelector('#temperaturasDestino').value
 
@@ -267,7 +267,7 @@ function temperatura(event) {
 document.getElementById('botaoParaConverter').addEventListener('click', function(event) {
     event.preventDefault()
 
-    categoriasValor = document.querySelector('#categorias').value;
+    categoriasValor = document.querySelector('#categorias').value
 
     if (categoriasValor === 'selecione') {
         exibirMsgDeErro(event)
